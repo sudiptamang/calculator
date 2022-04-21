@@ -12,7 +12,7 @@ for(item of buttons){
 
 
         }
-        else if (buttonText =='Del'){
+        else if (buttonText =='DEL'){
             // screenValue = ""; 
             // screen.value = screenValue;
             screenValue = screenValue.slice(0, screenValue.length - 1)
@@ -25,7 +25,8 @@ for(item of buttons){
             
         }
         else if(buttonText =='RESET'){
-            screen.value = "";
+            screenValue = "";
+            screen.value = screenValue;
 
         }
         else {
