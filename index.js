@@ -7,26 +7,37 @@ for(item of buttons){
         // console.log('Button text is',buttonText);
         if(buttonText=='X'){
             buttonText = '*';
-            screenValue += buttonText;
+            screenValue += buttonText ;
             screen.value = screenValue;
 
 
         }
-        else if (buttonText =='C'){
-            screenValue = ""; 
+        else if (buttonText =='Del'){
+            // screenValue = ""; 
+            // screen.value = screenValue;
+            screenValue = screenValue.slice(0, screenValue.length - 1)
             screen.value = screenValue;
+
             
         }
         else if (buttonText =='='){
             screen.value = eval(screenValue )
             
         }
-        else{
+        else if(buttonText =='RESET'){
+            screen.value = "";
+
+        }
+        else {
             screenValue += buttonText;
             screen.value = screenValue;
             
 
         }
+       
+            
+        
+      
 
     })
 }   
